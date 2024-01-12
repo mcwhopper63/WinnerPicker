@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Magomed Ankalaev",
+        "division": "Light Heavyweight",
+        "wins": 18,
+        "draws": 1,
+        "losses": 1
+    },
+    {
+        "name": "Johnny Walker",
+        "division": "Light Heavyweight",
+        "wins": 21,
+        "draws": 0,
+        "losses": 7
+    }
+]
