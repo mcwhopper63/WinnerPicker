@@ -18,12 +18,6 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
-app.post('/api/v1/users', async (req, res) => {
-    const newUser = new User(req.body);
-    const savedUser = await newUser.save();
-    res.json(savedUser);
-});
-
 try {
     mongoose.connect(process.env.MONGO_URL);
     app.listen(port, () => {
