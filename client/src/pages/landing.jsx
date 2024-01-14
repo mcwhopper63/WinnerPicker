@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import eventData from '../data/events.json';
-import fightData from '../data/fights.json';
-import fighterData from '../data/fighters.json';
+import fightsData from '../data/fights.json';
+import fightersData from '../data/fighters.json';
 import EventComponent from '../components/EventComponent';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,11 +13,13 @@ const LandingPage = () => {
     const [fighters, setFighters] = useState([]);
     const [selections, setSelections] = useState({});
 
+    // console.log('events: ', events, fights, fighters, selections);
+
     useEffect(() => {
         // Simulate fetching data
         setEvents([eventData]); // Assuming eventData is an object, not an array
-        setFights(fightData);
-        setFighters(fighterData);
+        setFights(fightsData);
+        setFighters(fightersData);
     }, []);
 
     const handleSelection = (fightOrder, fighterLastName) => {
@@ -43,7 +45,7 @@ const LandingPage = () => {
             <main>
                 {events.map((event) => (
                     <EventComponent
-                        key={event.name}
+                        key={event.eventId}
                         event={event}
                         fights={fights}
                         fighters={fighters}

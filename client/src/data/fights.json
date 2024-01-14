@@ -9,29 +9,29 @@
     {
         "eventId": 2024.1,
         "fightOrder": 2,
-        "weightDivision": 170,
-        "fighterA": "Strickland",
-        "fighterB": "du plessis"
-    },
-    {
-        "eventId": 2024.1,
-        "fightOrder": 3,
         "weightDivision": 135,
         "fighterA": "Pennington",
         "fighterB": "Silva"
     },
     {
         "eventId": 2024.1,
-        "fightOrder": 4,
+        "fightOrder": 3,
         "weightDivision": 170,
         "fighterA": "Magny",
         "fighterB": "Malott"
     },
     {
         "eventId": 2024.1,
-        "fightOrder": 5,
+        "fightOrder": 4,
         "weightDivision": 185,
         "fighterA": "Curtis",
         "fighterB": "Barriault"
+    },
+    {
+        "eventId": 2024.1,
+        "fightOrder": 5,
+        "weightDivision": 145,
+        "fighterA": "Allen",
+        "fighterB": "Evloev"
     }
 ]

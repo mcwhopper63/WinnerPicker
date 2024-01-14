@@ -3,7 +3,11 @@ import FighterComponent from './FighterComponent';
 const FightComponent = ({ fight, fighters, onSelection }) => {
     const fighterA = fighters.find((f) => f.lastName === fight.fighterA);
     const fighterB = fighters.find((f) => f.lastName === fight.fighterB);
+    // console.log(`fighterA: ${fight.fighterA}`);
+    console.log(`fighterA:`, fighterA);
+    console.log(`fighterB:`, fighterB);
 
+    //
     return (
         <div>
             <h3>

@@ -1,5 +1,5 @@
 {
-    "eventId": 1,
+    "eventId": 2024.1,
     "name": "UFC 297: Strickland vs. Du Plessis",
     "date": "Jan 20, 2024",
     "venue": "Scotiabank Arena",
@@ -7,5 +7,6 @@
     "state": "",
     "country": "Canada",
     "mainEventTime": "10pm est",
-    "prelimsEventTime": "630pm est"
+    "prelimsEventTime": "8pm est",
+    "earlyPrelimsEventTime": "630pm est"
 }

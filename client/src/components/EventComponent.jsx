@@ -1,12 +1,19 @@
 import FightComponent from './FightComponent';
 
 const EventComponent = ({ event, fights, fighters, onSelection }) => {
-    const eventFights = fights.filter((f) => f.event === event.name);
+    const eventFights = fights.filter((f) => f.eventId === event.eventId);
+    // console.log(`eventFights:`, eventFights);
 
     return (
         <section>
             <h2>
-                {event.name} - {event.date}
+                {event.name} <br />
+                {event.date} <br />
+                {event.venue}, {event.city}, {event.country} <br />
+                Main Event @ {event.mainEventTime.toUpperCase()} <br />
+                Prelims @ {event.prelimsEventTime.toUpperCase()} <br />
+                Early Prelims @ {event.earlyPrelimsEventTime.toUpperCase()}{' '}
+                <br />
             </h2>
             {eventFights.map((fight) => (
                 <FightComponent

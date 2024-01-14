@@ -3,7 +3,7 @@
         "firstName": "Sean",
         "lastName": "Strickland",
         "fighterId": "Strickland",
-        "division": "Middleweight",
+        "division": 185,
         "wins": 28,
         "losses": 5,
         "draws": 0
@@ -12,7 +12,7 @@
         "firstName": "Dricus",
         "lastName": "Du Plessis",
         "fighterId": "Du Plessis",
-        "division": "Middleweight",
+        "division": 185,
         "wins": 20,
         "losses": 2,
         "draws": 0
@@ -21,7 +21,7 @@
         "firstName": "Raquel",
         "lastName": "Pennington",
         "figherId": "Pennington",
-        "division": "Bantamweight",
+        "division": 135,
         "wins": 15,
         "losses": 9,
         "draws": 0
@@ -30,7 +30,7 @@
         "firstName": "Mayra Bueno",
         "lastName": "Silva",
         "figherId": "Silva",
-        "division": "Bantamweight",
+        "division": 135,
         "wins": 10,
         "losses": 2,
         "draws": 1
@@ -39,7 +39,7 @@
         "firstName": "Neil",
         "lastName": "Magny",
         "figherId": "Magny",
-        "division": "Welterweight",
+        "division": 170,
         "wins": 28,
         "losses": 12,
         "draws": 0
@@ -48,7 +48,7 @@
         "firstName": "Mike",
         "lastName": "Malott",
         "figherId": "Malott",
-        "division": "Welterweight",
+        "division": 170,
         "wins": 10,
         "losses": 1,
         "draws": 1
@@ -57,16 +57,25 @@
         "firstName": "Chris",
         "lastName": "Curtis",
         "figherId": "Curtis",
-        "division": "Middleweight",
+        "division": 185,
         "wins": 30,
         "losses": 10,
+        "draws": 0
+    },
+    {
+        "firstName": "Marc-Andre",
+        "lastName": "Barriault",
+        "figherId": "Barriault",
+        "division": 185,
+        "wins": 16,
+        "losses": 6,
         "draws": 0
     },
     {
         "firstName": "Arnold",
         "lastName": "Allen",
         "figherId": "Allen",
-        "division": "Featherweight",
+        "division": 145,
         "wins": 19,
         "losses": 2,
         "draws": 0
@@ -75,7 +84,7 @@
         "firstName": "Movsar",
         "lastName": "Evloev",
         "figherId": "Evloev",
-        "division": "Featherweight",
+        "division": 145,
         "wins": 17,
         "losses": 0,
         "draws": 0
