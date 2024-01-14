@@ -1,16 +1,83 @@
 [
     {
-        "name": "Magomed Ankalaev",
-        "division": "Light Heavyweight",
-        "wins": 18,
-        "draws": 1,
-        "losses": 1
+        "firstName": "Sean",
+        "lastName": "Strickland",
+        "fighterId": "Strickland",
+        "division": "Middleweight",
+        "wins": 28,
+        "losses": 5,
+        "draws": 0
     },
     {
-        "name": "Johnny Walker",
-        "division": "Light Heavyweight",
-        "wins": 21,
-        "draws": 0,
-        "losses": 7
+        "firstName": "Dricus",
+        "lastName": "Du Plessis",
+        "fighterId": "Du Plessis",
+        "division": "Middleweight",
+        "wins": 20,
+        "losses": 2,
+        "draws": 0
+    },
+    {
+        "firstName": "Raquel",
+        "lastName": "Pennington",
+        "figherId": "Pennington",
+        "division": "Bantamweight",
+        "wins": 15,
+        "losses": 9,
+        "draws": 0
+    },
+    {
+        "firstName": "Mayra Bueno",
+        "lastName": "Silva",
+        "figherId": "Silva",
+        "division": "Bantamweight",
+        "wins": 10,
+        "losses": 2,
+        "draws": 1
+    },
+    {
+        "firstName": "Neil",
+        "lastName": "Magny",
+        "figherId": "Magny",
+        "division": "Welterweight",
+        "wins": 28,
+        "losses": 12,
+        "draws": 0
+    },
+    {
+        "firstName": "Mike",
+        "lastName": "Malott",
+        "figherId": "Malott",
+        "division": "Welterweight",
+        "wins": 10,
+        "losses": 1,
+        "draws": 1
+    },
+    {
+        "firstName": "Chris",
+        "lastName": "Curtis",
+        "figherId": "Curtis",
+        "division": "Middleweight",
+        "wins": 30,
+        "losses": 10,
+        "draws": 0
+    },
+    {
+        "firstName": "Arnold",
+        "lastName": "Allen",
+        "figherId": "Allen",
+        "division": "Featherweight",
+        "wins": 19,
+        "losses": 2,
+        "draws": 0
+    },
+    {
+        "firstName": "Movsar",
+        "lastName": "Evloev",
+        "figherId": "Evloev",
+        "division": "Featherweight",
+        "wins": 17,
+        "losses": 0,
+        "draws": 0
     }
 ]

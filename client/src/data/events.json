@@ -1,10 +1,11 @@
 {
-    "name": "UFC Fight Night: Ankalaev vs. Walker 2",
-    "date": "Jan 13, 2024",
-    "venue": "UFC Apex",
-    "city": "Las Vegas",
-    "state": "NV",
-    "country": "USA",
-    "mainEventTime": "7pm est",
-    "prelimsEventTime": "4pm est"
+    "eventId": 1,
+    "name": "UFC 297: Strickland vs. Du Plessis",
+    "date": "Jan 20, 2024",
+    "venue": "Scotiabank Arena",
+    "city": "Toronto",
+    "state": "",
+    "country": "Canada",
+    "mainEventTime": "10pm est",
+    "prelimsEventTime": "630pm est"
 }

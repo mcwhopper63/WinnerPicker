@@ -1,24 +1,31 @@
-import React, { useState } from 'react';
 import FighterComponent from './FighterComponent';
 
-const FightComponent = ({ fight, fighterA, fighterB }) => {
-    // const { event, weightDivision } = fight;
-    // console.log('Fight:', fight.event);
-    // console.log('Fighter A:', fighterA);
-    // console.log('Fighter B:', fighterB);
-
-    if (!fight) {
-        return null; // or return a loading spinner, or some placeholder content
-    }
+const FightComponent = ({ fight, fighters, onSelection }) => {
+    const fighterA = fighters.find((f) => f.lastName === fight.fighterA);
+    const fighterB = fighters.find((f) => f.lastName === fight.fighterB);
 
     return (
         <div>
-            <h3>{fight}</h3>
-            <p>{fight}</p>
-            <FighterComponent fighter={fighterA} />
-            vs
-            <FighterComponent fighter={fighterB} />
+            <h3>
+                Fight {fight.fightOrder}: {fighterA.firstName} "
+                {fighterA.lastName}" vs. {fighterB.firstName} "
+                {fighterB.lastName}"
+            </h3>
+            <div>
+                <FighterComponent
+                    fighter={fighterA}
+                    fightId={fight.fightOrder}
+                    onSelection={onSelection}
+                />
+                <span>VS</span>
+                <FighterComponent
+                    fighter={fighterB}
+                    fightId={fight.fightOrder}
+                    onSelection={onSelection}
+                />
+            </div>
         </div>
     );
 };
+
 export default FightComponent;

@@ -1,4 +1,37 @@
-{
-    "event": "UFC Fight Night: Ankalaev vs. Walker 2",
-    "weightDivision": 205
-}
+[
+    {
+        "eventId": 2024.1,
+        "fightOrder": 1,
+        "weightDivision": 170,
+        "fighterA": "Strickland",
+        "fighterB": "du plessis"
+    },
+    {
+        "eventId": 2024.1,
+        "fightOrder": 2,
+        "weightDivision": 170,
+        "fighterA": "Strickland",
+        "fighterB": "du plessis"
+    },
+    {
+        "eventId": 2024.1,
+        "fightOrder": 3,
+        "weightDivision": 135,
+        "fighterA": "Pennington",
+        "fighterB": "Silva"
+    },
+    {
+        "eventId": 2024.1,
+        "fightOrder": 4,
+        "weightDivision": 170,
+        "fighterA": "Magny",
+        "fighterB": "Malott"
+    },
+    {
+        "eventId": 2024.1,
+        "fightOrder": 5,
+        "weightDivision": 185,
+        "fighterA": "Curtis",
+        "fighterB": "Barriault"
+    }
+]

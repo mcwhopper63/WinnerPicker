@@ -1,14 +1,16 @@
-import { useState } from 'react';
 import './App.css';
-import EventComponent from './components/EventComponent';
-import { Landing, Results } from './pages';
+import { LandingPage, ResultsPage } from './pages';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
     return (
-        <div>
-            <EventComponent />
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/results" element={<ResultsPage />} />
+            </Routes>
+        </Router>
     );
-}
+};
 
 export default App;

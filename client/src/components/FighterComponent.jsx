@@ -1,13 +1,10 @@
-import React from 'react';
-
-const FighterComponent = ({ fighter }) => {
-    //   console.log('Fight:', fight);
+const FighterComponent = ({ fighter, fightId, onSelection }) => {
     return (
-        <div>
-            <h4>{fighter.name}</h4>
-            <p>{fighter.division}</p>
-            {/* other fighter details */}
-        </div>
+        <button onClick={() => onSelection(fightId, fighter.lastName)}>
+            {fighter.firstName} {fighter.lastName} - {fighter.division}
+            <br />
+            Wins: {fighter.wins} Draws: {fighter.draws} Losses: {fighter.losses}
+        </button>
     );
 };
 
