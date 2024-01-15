@@ -5,8 +5,8 @@ const FightComponent = ({
     fight,
     fighters,
     onSelection,
-    className,
     isResultsPage,
+    selections,
 }) => {
     const fighterA = fighters.find((f) => f.lastName === fight.fighterA);
     const fighterB = fighters.find((f) => f.lastName === fight.fighterB);
@@ -21,6 +21,7 @@ const FightComponent = ({
         setWinner(fighterLastName);
         onSelection(fightOrder, fighterLastName);
     };
+
     //
     return (
         <div>
@@ -33,24 +34,22 @@ const FightComponent = ({
                 <FighterComponent
                     key={fighterA.lastName}
                     fighter={fighterA}
+                    selections={selections}
                     onSelection={() =>
                         handleSelection(fight.fightOrder, fighterA.lastName)
                     }
-                    className={
-                        winner === fighterA.lastName ? 'winner' : 'non-winner'
-                    }
+                    className={winner === fighterA.lastName ? 'winner' : ''}
                     isResultsPage={isResultsPage}
                 />
                 <span> VS </span>
                 <FighterComponent
                     key={fighterB.fighterId}
                     fighter={fighterB}
+                    selections={selections}
                     onSelection={() =>
                         handleSelection(fight.fightOrder, fighterB.lastName)
                     }
-                    className={
-                        winner === fighterB.lastName ? 'winner' : 'non-winner'
-                    }
+                    className={winner === fighterB.lastName ? 'winner' : ''}
                     isResultsPage={isResultsPage}
                 />
             </div>

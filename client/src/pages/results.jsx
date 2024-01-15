@@ -5,13 +5,13 @@ const ResultsPage = ({ isResultsPage }) => {
     const location = useLocation();
     const { selections, events, fights, fighters, handleSelection } =
         location.state;
-    // console.log(selections, events, fights, fighters);
-
-    console.log('isresultspage from results page', isResultsPage);
 
     return (
         <div>
-            <header>Your results here:</header>
+            <header>
+                These are your picks. Share with your friends and have them
+                predict too.
+            </header>
             <main>
                 {events.map((event) => (
                     <EventComponent

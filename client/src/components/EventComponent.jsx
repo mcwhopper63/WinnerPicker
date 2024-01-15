@@ -6,7 +6,6 @@ const EventComponent = ({
     fighters,
     onSelection,
     selections,
-    className,
     isResultsPage,
 }) => {
     const eventFights = fights.filter((f) => f.eventId === event.eventId);
@@ -28,8 +27,8 @@ const EventComponent = ({
                     fight={fight}
                     fighters={fighters}
                     onSelection={onSelection}
-                    className={className}
                     isResultsPage={isResultsPage}
+                    selections={selections}
                 />
             ))}
         </section>

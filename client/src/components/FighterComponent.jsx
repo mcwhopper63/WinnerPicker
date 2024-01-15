@@ -4,12 +4,17 @@ const FighterComponent = ({
     onSelection,
     className,
     isResultsPage,
+    selections,
 }) => {
-    console.log(isResultsPage); // Add this line
+    const fighterClassName = `${className} ${
+        isResultsPage && Object.values(selections).includes(fighter.lastName)
+            ? 'chosen-one'
+            : ''
+    }`;
 
     return (
         <button
-            className={className}
+            className={fighterClassName}
             disabled={isResultsPage}
             onClick={() => onSelection(fightId, fighter.lastName)}
         >

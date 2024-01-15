@@ -13,9 +13,6 @@ const LandingPage = () => {
     const [fighters, setFighters] = useState([]);
     const [selections, setSelections] = useState({});
 
-    console.log('fights: ', fights);
-    console.log('selections: ', selections);
-
     useEffect(() => {
         // Simulate fetching data
         setEvents([eventData]); // Assuming eventData is an object, not an array
