@@ -1,7 +1,10 @@
-const FighterComponent = ({ fighter, fightId, onSelection }) => {
+const FighterComponent = ({ fighter, fightId, onSelection, className }) => {
     return (
-        <button onClick={() => onSelection(fightId, fighter.lastName)}>
-            {fighter.firstName} {fighter.lastName} - {fighter.division}
+        <button
+            className={className}
+            onClick={() => onSelection(fightId, fighter.lastName)}
+        >
+            {fighter.firstName} {fighter.lastName} - {fighter.division} lbs
             <br />
             Wins: {fighter.wins} Draws: {fighter.draws} Losses: {fighter.losses}
         </button>

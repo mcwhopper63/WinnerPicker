@@ -1,9 +1,15 @@
 import FightComponent from './FightComponent';
 
-const EventComponent = ({ event, fights, fighters, onSelection }) => {
+const EventComponent = ({
+    event,
+    fights,
+    fighters,
+    onSelection,
+    selections,
+    className,
+}) => {
     const eventFights = fights.filter((f) => f.eventId === event.eventId);
-    // console.log(`eventFights:`, eventFights);
-
+    // console.log('selections from EventComponent', selections);
     return (
         <section>
             <h2>
@@ -21,6 +27,7 @@ const EventComponent = ({ event, fights, fighters, onSelection }) => {
                     fight={fight}
                     fighters={fighters}
                     onSelection={onSelection}
+                    className={className}
                 />
             ))}
         </section>

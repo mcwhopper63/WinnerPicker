@@ -13,7 +13,8 @@ const LandingPage = () => {
     const [fighters, setFighters] = useState([]);
     const [selections, setSelections] = useState({});
 
-    // console.log('events: ', events, fights, fighters, selections);
+    console.log('fights: ', fights);
+    console.log('selections: ', selections);
 
     useEffect(() => {
         // Simulate fetching data
@@ -36,7 +37,9 @@ const LandingPage = () => {
 
         // After submitting, we'll navigate to the Results Page
         // You'll need to setup and use the navigate function from React Router
-        navigate('/results', { state: { selections, events, fighters } });
+        navigate('/results', {
+            state: { selections, events, fights, fighters },
+        });
     };
 
     return (
@@ -50,9 +53,19 @@ const LandingPage = () => {
                         fights={fights}
                         fighters={fighters}
                         onSelection={handleSelection}
+                        selections={selections}
                     />
                 ))}
-                <button onClick={handleSubmit}>Generate Results</button>
+                <button
+                    className={
+                        Object.keys(selections).length === fights.length
+                            ? 'complete'
+                            : 'incomplete'
+                    }
+                    onClick={handleSubmit}
+                >
+                    Generate Results
+                </button>
             </main>
         </div>
     );

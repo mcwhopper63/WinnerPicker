@@ -1,24 +1,3 @@
-here are my schemas. Please add this to your context of creating this two page web app.
-
-eventModel is going to have all the event information such as the event name, date, arena, city, state, country, maineventtime, prelimseventtime, and earlyprelimseventtime.
-
-the fight model is going to have the event, weight division, and odds (which is optional data), and fighter information.
-
-the fighter model is going to have the name, division, and dob.
-
-for now, i will manually input the above information. then, the webapp will render a page like below:
-
-event container with event information
-fight container with fights. each fight will show the fighter a and fighter b, and the basic fight information.
-
-the web app user will now select who he or she thinks is going to win the fight. once the user has selected all winners, he or she can hit the generate button and will be taken to the Results Page.
-
-The results page will return the winner predictions in two ways. The first is going to be all text. The second is going to be the same rendering as the landing page, but with an indicator of who the user has picked. This results page will be individually prepared for the user and can be shared.
-
-do i need more schemas to implement this? limit the response to 1000 words.
-
-///
-
 I am building a simple web application. I need you to help me build this out. I need step by step instructions in great detail.
 
 I want to use the MERN stack, so use MONGODB, Express, React, and Node.
@@ -232,7 +211,7 @@ Hotkeys for your next action:
 
 # This is the basics of the web app. Need to add what we added that day to this blurb.
 
-this is a summary of what we worked on yesterday.
+This is a summary of what we worked on yesterday.
 
 I am building a simple web application. I need you to help me build this out. I need step by step instructions in great detail.
 
@@ -278,3 +257,39 @@ i want to be able to present the events, fights, and fighters. i want to be able
 i want to include a button that will take the selections and generate the Results page. The Results page is going to show the user's picks in two ways: use the same components as we did in the landing page, and indicate which fighter the user selected; and in all text. this Results page has to be shareable.
 
 help me create this today.
+
+1/14/2023
+
+This is what we have created so far:
+
+1.  set up App.jsx with two routes:
+
+    1. '/', that loads LandingPage
+    2. '/results', that loads ResultsPage
+
+2.  Created LandingPage
+
+    1.  imports data files called eventData, fightsData, fightersData
+    2.  sets events, fights, and fighters with their counterpart setter function
+    3.  custom function called handleSelection. does what it says.
+    4.  handleSubmit that logs the user selection and navigates to ResultsPage.
+        const handleSubmit = () => {
+        // Here, you would typically send the selections to the backend.
+        // For simulation purposes, we'll just log the selections to the console
+        console.log('User selections:', selections);
+
+            // After submitting, we'll navigate to the Results Page
+            // You'll need to setup and use the navigate function from React Router
+            navigate('/results', { state: { selections, events, fighters } });
+
+        };
+
+    5.  eventComponent, fightComponent, and fighterComponent
+
+Make me the Results Page with detailed step by step instructions. Thank vou very much in advance. Also, pls give me instructions in notes since I am still learning. Pls be my teacher. Thank you.
+
+Also, keep in mind that users have to be able to see what they selected before they finally hit the generate button. I think we have to fix that with css so let's work on that later. Pls confirm you understand this is something we have to return to. Thanks.
+
+ResultsPage
+
+1. the selections state
