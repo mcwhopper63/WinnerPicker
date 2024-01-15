@@ -41,7 +41,21 @@ const LandingPage = () => {
 
     return (
         <div>
-            <header>{/* Header Content Here */}</header>
+            <header>
+                <ul>
+                    <li style={{ listStyleType: 'none' }}>
+                        This site is still in development.
+                    </li>
+                    <li style={{ listStyleType: 'none' }}>
+                        Thanks for checking it out. I created this to quickly
+                        share my predictions for the whole card.
+                    </li>
+                    <li style={{ listStyleType: 'none' }}>
+                        You can quickly pick your predictions, hit generate, and
+                        share your predictions with your filthy casual friends
+                    </li>
+                </ul>
+            </header>
             <main>
                 {events.map((event) => (
                     <EventComponent

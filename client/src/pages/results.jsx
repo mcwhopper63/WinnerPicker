@@ -9,8 +9,19 @@ const ResultsPage = ({ isResultsPage }) => {
     return (
         <div>
             <header>
-                These are your picks. Share with your friends and have them
-                predict too.
+                <ul>
+                    <li style={{ listStyleType: 'none' }}>
+                        These are your picks{' '}
+                    </li>
+                    <li style={{ listStyleType: 'none' }}>
+                        Screenshot and share for now, but I will be adding an
+                        easier way to share your predictions.
+                    </li>
+                    <li style={{ listStyleType: 'none' }}>
+                        Or just copy and paste the text at the bottom of the
+                        page.
+                    </li>
+                </ul>
             </header>
             <main>
                 {events.map((event) => (
