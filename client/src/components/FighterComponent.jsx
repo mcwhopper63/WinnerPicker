@@ -1,7 +1,16 @@
-const FighterComponent = ({ fighter, fightId, onSelection, className }) => {
+const FighterComponent = ({
+    fighter,
+    fightId,
+    onSelection,
+    className,
+    isResultsPage,
+}) => {
+    console.log(isResultsPage); // Add this line
+
     return (
         <button
             className={className}
+            disabled={isResultsPage}
             onClick={() => onSelection(fightId, fighter.lastName)}
         >
             {fighter.firstName} {fighter.lastName} - {fighter.division} lbs

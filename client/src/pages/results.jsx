@@ -1,12 +1,13 @@
 import { useLocation } from 'react-router-dom';
 import EventComponent from '../components/EventComponent';
 
-const ResultsPage = () => {
+const ResultsPage = ({ isResultsPage }) => {
     const location = useLocation();
     const { selections, events, fights, fighters, handleSelection } =
         location.state;
     // console.log(selections, events, fights, fighters);
-    console.log('selections from results', selections);
+
+    console.log('isresultspage from results page', isResultsPage);
 
     return (
         <div>
@@ -20,6 +21,7 @@ const ResultsPage = () => {
                         fighters={fighters}
                         onSelection={handleSelection}
                         selections={selections}
+                        isResultsPage={isResultsPage}
                     />
                 ))}
             </main>

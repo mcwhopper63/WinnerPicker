@@ -7,7 +7,10 @@ const App = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route path="/results" element={<ResultsPage />} />
+                <Route
+                    path="/results"
+                    element={<ResultsPage isResultsPage={true} />}
+                />
             </Routes>
         </Router>
     );
