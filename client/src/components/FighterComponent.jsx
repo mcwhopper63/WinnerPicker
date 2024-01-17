@@ -19,9 +19,12 @@ const FighterComponent = ({
             onClick={() => onSelection(fightId, fighter.lastName)}
         >
             <div className="fighter-btn">
-                {fighter.firstName} {fighter.lastName}
-                <br />
-                {fighter.wins}-{fighter.losses}-{fighter.draws}
+                <div className="fighter-name">
+                    {fighter.firstName} {fighter.lastName}
+                </div>
+                <div className="fighter-record">
+                    {fighter.wins}-{fighter.losses}-{fighter.draws}
+                </div>
             </div>
         </button>
     );

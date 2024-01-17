@@ -9,21 +9,19 @@ const ResultsPage = ({ isResultsPage }) => {
     return (
         <div>
             <header>
-                <ul>
-                    <li style={{ listStyleType: 'none' }}>
-                        These are your picks{' '}
-                    </li>
-                    <li style={{ listStyleType: 'none' }}>
-                        Screenshot and share for now, but I will be adding an
-                        easier way to share your predictions.
-                    </li>
-                    <li style={{ listStyleType: 'none' }}>
-                        Or just copy and paste the text at the bottom of the
-                        page.
-                    </li>
-                </ul>
+                <p className="results-blurb">
+                    👊🏻 These are your predictions. Share it with your friends.{' '}
+                    <br />
+                    👊🏻 Isn't this convenient? Pls come back every Saturday to
+                    create your picks!
+                </p>
             </header>
             <main>
+                <div className="results-txt-cntr">
+                    {Object.entries(selections).map(([key, value]) => (
+                        <div key={key}>{`${key}: ${value}`}</div>
+                    ))}
+                </div>
                 {events.map((event) => (
                     <EventComponent
                         key={event.eventId}
@@ -36,11 +34,6 @@ const ResultsPage = ({ isResultsPage }) => {
                     />
                 ))}
             </main>
-            <div>
-                {Object.entries(selections).map(([key, value]) => (
-                    <div key={key}>{`${key}: ${value}`}</div>
-                ))}
-            </div>
         </div>
     );
 };
