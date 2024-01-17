@@ -33,14 +33,6 @@
     }
 }
 
-.intro-blurb {
-    font-style: italic;
-}
-
-.fight-container {
-    border: 2px solid yellow;
-}
-
 .vs {
     margin: 0 6em;
 }
@@ -79,7 +71,45 @@
 }
 
 /* landing page */
+
+.intro-blurb {
+    font-style: italic;
+    color: #a4da85;
+}
+
+.event-parent-cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .generate-btn {
     margin-top: 5em;
     width: 14em;
+}
+
+/* event component */
+
+.event-name {
+    margin-bottom: 0.5em;
+}
+
+.event-date-location,
+.event-times {
+    margin-left: 1.01em;
+}
+
+.events-fights-cntr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+
+/* dev border - comment out after production */
+
+.dev-border {
+    border: 2px solid yellow;
 }

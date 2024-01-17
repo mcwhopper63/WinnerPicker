@@ -48,7 +48,7 @@ const LandingPage = () => {
                 </p>
             </header>
             <main>
-                <div className="fight-containe r">
+                <div className="event-parent-cntr">
                     {events.map((event) => (
                         <EventComponent
                             key={event.eventId}
@@ -59,17 +59,18 @@ const LandingPage = () => {
                             selections={selections}
                         />
                     ))}
+
+                    <button
+                        className={`generate-btn ${
+                            Object.keys(selections).length === fights.length
+                                ? 'complete'
+                                : 'incomplete'
+                        }`}
+                        onClick={handleSubmit}
+                    >
+                        Generate Results
+                    </button>
                 </div>
-                <button
-                    className={`generate-btn ${
-                        Object.keys(selections).length === fights.length
-                            ? 'complete'
-                            : 'incomplete'
-                    }`}
-                    onClick={handleSubmit}
-                >
-                    Generate Results
-                </button>
             </main>
         </div>
     );
