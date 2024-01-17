@@ -42,37 +42,30 @@ const LandingPage = () => {
     return (
         <div>
             <header>
-                <ul>
-                    <li style={{ listStyleType: 'none' }}>
-                        This site is still in development.
-                    </li>
-                    <li style={{ listStyleType: 'none' }}>
-                        Thanks for checking it out. I created this to quickly
-                        share my predictions for the whole card.
-                    </li>
-                    <li style={{ listStyleType: 'none' }}>
-                        You can quickly pick your predictions, hit generate, and
-                        share your predictions with your filthy casual friends
-                    </li>
-                </ul>
+                <p className="intro-blurb">
+                    Channel your inner Mystic Mac and pick who you think will
+                    win. Share it with other fight fans.
+                </p>
             </header>
             <main>
-                {events.map((event) => (
-                    <EventComponent
-                        key={event.eventId}
-                        event={event}
-                        fights={fights}
-                        fighters={fighters}
-                        onSelection={handleSelection}
-                        selections={selections}
-                    />
-                ))}
+                <div className="fight-containe r">
+                    {events.map((event) => (
+                        <EventComponent
+                            key={event.eventId}
+                            event={event}
+                            fights={fights}
+                            fighters={fighters}
+                            onSelection={handleSelection}
+                            selections={selections}
+                        />
+                    ))}
+                </div>
                 <button
-                    className={
+                    className={`generate-btn ${
                         Object.keys(selections).length === fights.length
                             ? 'complete'
                             : 'incomplete'
-                    }
+                    }`}
                     onClick={handleSubmit}
                 >
                     Generate Results

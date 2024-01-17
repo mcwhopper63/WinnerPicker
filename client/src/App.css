@@ -2,7 +2,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .logo {
@@ -33,6 +33,18 @@
     }
 }
 
+.intro-blurb {
+    font-style: italic;
+}
+
+.fight-container {
+    border: 2px solid yellow;
+}
+
+.vs {
+    margin: 0 6em;
+}
+
 .card {
     padding: 2em;
 }
@@ -41,13 +53,9 @@
     color: #888;
 }
 
-.selected-fighter {
-    border: 2px solid yellow;
-}
-
 .winner,
 .chosen-one {
-    border: 2px solid yellow;
+    border: 2px solid gold;
 }
 
 .complete {
@@ -58,4 +66,20 @@
 .incomplete {
     pointer-events: none;
     opacity: 0.5;
+}
+
+/* fighter component */
+.fighter-btn,
+.generate-btn {
+    width: 10em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* landing page */
+.generate-btn {
+    margin-top: 5em;
+    width: 14em;
 }

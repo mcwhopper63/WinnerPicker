@@ -12,15 +12,20 @@ const EventComponent = ({
 
     return (
         <section>
-            <h2>
-                {event.name} <br />
-                {event.date} <br />
-                {event.venue}, {event.city}, {event.country} <br />
-                Main Event @ {event.mainEventTime.toUpperCase()} <br />
-                Prelims @ {event.prelimsEventTime.toUpperCase()} <br />
-                Early Prelims @ {event.earlyPrelimsEventTime.toUpperCase()}{' '}
+            <div className="fight-container">
+                <h1>{event.name}</h1>
+                <h3>
+                    Saturday, {event.date} <br />
+                    {event.venue}, {event.city}, {event.country}
+                </h3>
+                <h3></h3>
+                <p>
+                    Main Event @ {event.mainEventTime.toUpperCase()} <br />
+                    Prelims @ {event.prelimsEventTime.toUpperCase()} <br />
+                    Early Prelims @ {event.earlyPrelimsEventTime.toUpperCase()}{' '}
+                </p>
                 <br />
-            </h2>
+            </div>
             {eventFights.map((fight) => (
                 <FightComponent
                     key={fight.fightOrder}

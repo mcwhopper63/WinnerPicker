@@ -26,9 +26,8 @@ const FightComponent = ({
     return (
         <div>
             <h3>
-                Fight {fight.fightOrder}: {fighterA.firstName} "
-                {fighterA.lastName}" vs. {fighterB.firstName} "
-                {fighterB.lastName}"
+                Fight {fight.fightOrder}: {fighterA.firstName}{' '}
+                {fighterA.lastName} vs. {fighterB.firstName} {fighterB.lastName}
             </h3>
             <div>
                 <FighterComponent
@@ -41,7 +40,7 @@ const FightComponent = ({
                     className={winner === fighterA.lastName ? 'winner' : ''}
                     isResultsPage={isResultsPage}
                 />
-                <span> VS </span>
+                <span className="vs"> VS </span>
                 <FighterComponent
                     key={fighterB.fighterId}
                     fighter={fighterB}

@@ -18,9 +18,11 @@ const FighterComponent = ({
             disabled={isResultsPage}
             onClick={() => onSelection(fightId, fighter.lastName)}
         >
-            {fighter.firstName} {fighter.lastName} - {fighter.division} lbs
-            <br />
-            Wins: {fighter.wins} Draws: {fighter.draws} Losses: {fighter.losses}
+            <div className="fighter-btn">
+                {fighter.firstName} {fighter.lastName}
+                <br />
+                {fighter.wins}-{fighter.losses}-{fighter.draws}
+            </div>
         </button>
     );
 };
