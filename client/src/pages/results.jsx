@@ -12,8 +12,8 @@ const ResultsPage = ({ isResultsPage }) => {
                 <p className="results-blurb">
                     👊🏻 These are your predictions. Share it with your friends.{' '}
                     <br />
-                    👊🏻 Isn't this convenient? Pls come back every Saturday to
-                    create your picks!
+                    👊🏻 I'll be updating every event for the next couple of weeks
+                    until UFC300. For feedback, x @mcwhopper63
                 </p>
             </header>
             <main>

@@ -43,7 +43,7 @@ const LandingPage = () => {
         <div>
             <header>
                 <p className="intro-blurb">
-                    Channel your inner Mystic Mac and pick who you think will
+                    👊🏻 Channel your inner Mystic Mac and pick who you think will
                     win. Share it with other fight fans.
                 </p>
             </header>
