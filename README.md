@@ -4,7 +4,9 @@ Are you Mystic Mac or Drake? Predict MMA fight outcomes, share your picks, and c
 
 https://wpicker.netlify.app/
 
-React, JavaScript, CSS, HTML, Netlify
+Created with React, JavaScript, CSS, HTML, Netlify.
+
+This version is not a full stack app. Only the client side is built at this time. But stay tuned for more features 👊🏻
 
 1.  **Introduction**
 
@@ -18,7 +20,10 @@ React, JavaScript, CSS, HTML, Netlify
 
 3.  **Installation and Setup**:
 
-    Journal Safe is a straightforward web app built with vanilla HTML, CSS, and JavaScript. To set it up, simply clone the repository, and open the HTML file in your preferred web browser. No additional installation steps are required, making it accessible for users of all technical backgrounds.
+    1. Clone the repository and navigate to client folder
+    2. Open terminal from client folder and run these two commands:
+        - npm install
+        - npm run dev
 
 4.  **How to use:**
 
